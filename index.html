@@ -1,0 +1,56 @@
+<head>
+  <title>Tic Tac Toe</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+
+<h1> Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm <span id="title">Tic Tac Toe</span> Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h1>
+<div id="wall">
+  <div id="blackBoard">
+    <div id="gameBoard">
+      <div class="row">
+        <div class="box set0 set3 set6 priority" id="a1"></div>
+        <div class="box set0 set4" id="a2"></div>
+        <div class="box set0 set5 set7 priority" id="a3"></div>
+      </div>
+      <div class="row">
+        <div class="box set1 set3" id="b1"></div>
+        <div class="box set1 set4 set6 set7" id="b2"></div>
+        <div class="box set1 set5" id="b3"></div>
+      </div>
+      <div class="row">
+        <div class="box set2 set3 set7 priority" id="c1"></div>
+        <div class="box set2 set4" id="c2"></div>
+        <div class="box set2 set5 set6 priority" id="c3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="uiMessages">
+  <div id="choose-level">Welcome to the wonderful world of Tic-Tac-Toe! Choose your difficulty level.
+    <button class="button level" id="easy">Easy</button>
+    <button class="button level" id="normal">Normal</button>
+    <button class="button level" id="hard">Hard</button>   
+  </div>
+
+  <div id="xOrO">You're friend Hal: I challenge you to a game of Tic Tac Toe! Do you want to be X or O?
+    <button class = "button letter" id="O">O</button>
+    <button class = "button letter" id="X">X</button>
+  </div>
+
+  <div id="play-again">
+    <div class="outcome" id="win">Hal: Congrats! You won! Would you like to play again?</div>
+    <div class="outcome" id="tie">Hal: It looks like a tie. Would you like to play again?</div>
+    <div class="outcome" id="loss">Hal: I beat you fool. Would you like to play again?</div>
+    <button class="button continue" id="yes">Yes</button>
+    <button class="button continue" id="no">No</button>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="actions.js"></script>
